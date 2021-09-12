@@ -1,3 +1,9 @@
 /Library/
 /Logs/
 /Temp/
+/.vs/
+/obj/
+/.vsconfig
+/Assembly-CSharp-Editor.csproj
+/Assembly-CSharp.csproj
+/TestECSRigidbodies.sln
