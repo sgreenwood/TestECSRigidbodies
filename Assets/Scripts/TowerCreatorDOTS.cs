@@ -69,12 +69,14 @@ public class TowerCreatorDOTS : MonoBehaviour
 
     private void OnDisable()
     {
-        blobAssetStore.Dispose();
-
-      /*  using (var allEntities = entityManager.GetAllEntities())
+        using (var allEntities = entityManager.GetAllEntities())
         {
             entityManager.DestroyEntity(allEntities);
-        }*/
+        }
+
+        blobAssetStore.Dispose();
+
+      /*  */
 
     }
 
