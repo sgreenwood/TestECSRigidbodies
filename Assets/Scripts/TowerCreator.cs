@@ -5,12 +5,12 @@ using UnityEngine;
 public class TowerCreator : MonoBehaviour
 {
     public GameObject cubePrefab;
-    public int cubeMax = 100;
     public int width = 10;
     public int length = 10;
 
     private void Start()
     {
+        int cubeMax = GameController.numObjects;
         int height = cubeMax;
         int cubeCount = 0;
         for (int h = 0; h < height; h++)
