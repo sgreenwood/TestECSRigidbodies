@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DOTS.unity
     guid: 63d568a5032e84846b785d83461da2ca
+  - enabled: 1
+    path: Assets/Scenes/GameObjectSphere.unity
+    guid: 9d4f0a64c6eab3f49a74626bfa7b40a6
+  - enabled: 1
+    path: Assets/Scenes/DOTSSphere.unity
+    guid: 46edb9882786b3e4b9e4f85b766574e5
   m_configObjects: {}
