@@ -15,6 +15,10 @@ public class GameController : MonoBehaviour
     [SerializeField]
     Button buttonDOTS;
     [SerializeField]
+    Button buttonGameObjectSphere;
+    [SerializeField]
+    Button buttonDOTSSphere;
+    [SerializeField]
     InputField inputfieldObjectCount;
     
     // Start is called before the first frame update
@@ -30,6 +34,8 @@ public class GameController : MonoBehaviour
 
         buttonGameObject.onClick.AddListener(OnClickGameObject);
         buttonDOTS.onClick.AddListener(OnClickDOTS);
+        buttonGameObjectSphere.onClick.AddListener(OnClickGameObjectSphere);
+        buttonDOTSSphere.onClick.AddListener(OnClickDOTSSphere);
         inputfieldObjectCount.onValueChanged.AddListener(OnInputFieldObjectsCount);
 
         inputfieldObjectCount.text = numObjects.ToString();
@@ -43,6 +49,16 @@ public class GameController : MonoBehaviour
     void OnClickDOTS()
     {
         SceneManager.LoadScene("DOTS");
+    }
+
+    void OnClickGameObjectSphere()
+    {
+        SceneManager.LoadScene("GameObjectSphere");
+    }
+
+    void OnClickDOTSSphere()
+    {
+        SceneManager.LoadScene("DOTSSphere");
     }
 
     void OnInputFieldObjectsCount( string newInput)
